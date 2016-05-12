@@ -1,0 +1,464 @@
+/********************
+	COLORS
+********************/
+  .sub-nav {
+		background-color: #2d2d2d;
+		ul {
+			li {
+				a {
+					color: #acacac;
+				}
+			}
+		}
+	}
+
+.header {
+	color: #acacac;
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.35);
+  .main-nav {
+		background-color: rgba(233, 233, 233, 0.95);
+		background-color: #E9E9E9\9;
+		ul.menu-wrapper {
+			li.main-link-item {
+				color: #333333;
+				&:hover {
+					color: #ffffff;
+					a {
+						color: #ffffff;
+					}
+				}
+				a {
+					color: #333333;
+				}
+				&.current-menu-item {
+					a {
+						color: #ffffff;
+					}
+				}
+				.menu-learning-sub-menu-container, .menu-general-information-sub-menu-container, .menu-exhibitor-resources-sub-menu-container {
+					ul {
+						background: #ffffff;
+						li {
+							a {
+								color: #333333;
+								&:hover {
+									color: #ffffff;
+								}
+							}
+						}
+
+					}
+				}
+			}
+		}
+  }
+}
+
+/********************
+	MEDIA QUERIES
+********************/
+/* col-lg */
+@media (min-width: 1200px) {
+ 	.sub-nav {
+		height: 32px;
+		font-size: 11px;
+		position: relative;
+		z-index: 3000; 	
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			text-align: left; 
+			li {
+				position: relative;
+				margin-right: 5px;
+				display: inline-block;
+				a {
+					text-transform: uppercase;
+					display: block;
+					padding: 0 10px;
+					text-decoration: none;
+					line-height: 32px;
+					height: 32px;
+					display: block;
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}	
+	.header {
+	  z-index: 200;
+	  position: relative;
+	  top: 0;
+	  width: 100%;
+	  .main-nav {
+			height: 44px;
+			font-family: Arial, sans-serif;
+			font-weight: bold;
+			.logo {
+				z-index: 9999;
+				position: relative;
+				margin: 0 40px 0 0;
+				padding: 10px 0;
+			}
+			ul.menu-wrapper {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+				text-align: left; 
+				position: relative;
+				li.main-link-item {
+					margin-right: 5px;
+					display: inline-block;
+					font-size: 14px;
+					font-weight: normal;
+					height: 44px;
+					line-height: 44px;
+					text-transform: uppercase;
+					padding: 0 10px;
+					cursor: pointer;
+					&.active {
+						border-bottom: 3px solid transparent;
+					}
+					&:hover {
+						text-decoration: none;
+					}
+					a {
+						text-decoration: none;
+					}
+					.icon {
+						display: none;
+					}
+					&.current-menu-item {
+						a {
+							text-decoration: none;
+							height: 48px;
+						}
+					}
+					&:hover {
+						.menu-learning-sub-menu-container, .menu-general-information-sub-menu-container, .menu-exhibitor-resources-sub-menu-container  {
+							display: block;
+						}
+					}
+					.menu-learning-sub-menu-container, .menu-general-information-sub-menu-container, .menu-exhibitor-resources-sub-menu-container {
+						position: absolute;
+						top:24px;
+						left: 0;
+						right: 0;
+						margin: auto;
+						width: 1170px;
+						height: 30px;
+						display: none;
+						padding-top: 20px;
+						ul {
+							display: block;
+							margin: 0;
+							padding: 0;
+							list-style: none;
+							text-align: center;
+							li {
+								display: inline-block;
+								a {
+									font-size: 12px;
+									background: none;
+									padding: 16px 5px 15px 5px;
+								}
+							}
+
+						}
+					}
+				}
+			}
+	  }
+	}
+}
+
+/* col-md */
+@media (min-width: 992px) and (max-width: 1199px) { 
+		  .sub-nav {
+			height: 32px;
+			font-size: 11px;
+			position: relative;
+			z-index: 3000; 	
+			ul {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+				text-align: left; 
+				li {
+					position: relative;
+					margin-right: 5px;
+					display: inline-block;
+					a {
+						text-transform: uppercase;
+						display: block;
+						padding: 0 10px;
+						text-decoration: none;
+						line-height: 32px;
+						height: 32px;
+						display: block;
+						&:hover {
+							text-decoration: none;
+						}
+					}
+				}
+			}
+	  }
+
+	.header {
+	  z-index: 200;
+	  position: relative;
+	  top: 0;
+	  width: 100%;
+	  .main-nav {
+			height: 44px;
+			font-family: Arial, sans-serif;
+			font-weight: bold;
+			.logo {
+				z-index: 9999;
+				position: relative;
+				margin: 0 40px 0 0;
+				padding: 10px 0;
+			}
+			ul.menu-wrapper {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+				text-align: left; 
+				position: relative;
+				li.main-link-item {
+					margin-right: 2px;
+					display: inline-block;
+					font-size: 13px;
+					font-weight: normal;
+					height: 44px;
+					line-height: 44px;
+					text-transform: uppercase;
+					padding: 0 3px;
+					cursor: pointer;
+					&.active {
+						border-bottom: 3px solid transparent;
+					}
+					&:hover {
+						text-decoration: none;
+					}
+					a {
+						text-decoration: none;
+					}
+					.icon {
+						display: none;
+					}
+					&.current-menu-item {
+						a {
+							text-decoration: none;
+							height: 48px;
+						}
+					}
+					&:hover {
+						.menu-learning-sub-menu-container, .menu-general-information-sub-menu-container, .menu-exhibitor-resources-sub-menu-container  {
+							display: block;
+						}
+					}
+					.menu-learning-sub-menu-container, .menu-general-information-sub-menu-container, .menu-exhibitor-resources-sub-menu-container {
+						position: absolute;
+						top:24px;
+						left: 0;
+						right: 0;
+						margin: auto;
+						width: 930px;
+						height: 20px;
+						display: none;
+						padding-top: 20px;
+						ul {
+							display: block;
+							margin: 0;
+							padding: 0;
+							list-style: none;
+							text-align: center;
+							li {
+								display: inline-block;
+								padding: 0;
+								margin: 0;
+								a {
+									font-size: 10px;
+									background: none;
+									padding: 17px 2px;
+									margin: 0;
+								}
+							}
+
+						}
+					}
+				}
+			}
+	  }
+	}
+
+}
+
+/* col-sm */
+@media (max-width: 991px) {
+		  .sub-nav {
+			font-size: 11px;
+			z-index: 3000; 	
+			ul {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+				text-align: left; 
+				li {
+					margin-right: 5px;
+					display: inline-block;
+					a {
+						text-transform: uppercase;
+						display: block;
+						padding: 0 10px;
+						text-decoration: none;
+						line-height: 32px;
+						height: 32px;
+						display: block;
+						&:hover {
+							text-decoration: none;
+						}
+					}
+				}
+			}
+	  }
+
+	.header {
+	  z-index: 200;
+	  position: relative;
+	  top: 0;
+	  width: 100%;
+	  .main-nav {
+			height: 44px;
+			font-family: Arial, sans-serif;
+			font-weight: bold;
+			.logo {
+				z-index: 9800;
+				position: relative;
+				float: none !important;
+				text-align: center;
+				margin: 0 40px 0 0;
+				padding: 10px 0;
+				img {
+					display: inline-block;
+				} 
+			}
+			.mobile-menu {
+				width: 24px;
+				height: 24px;
+				margin: 10px;
+				cursor: pointer;
+				background-repeat: no-repeat;
+				z-index: 9999;
+				position: relative;
+				&.open-menu {
+					background: url('../../assets/images/global/mobile-menu-open.png');
+				}
+				&.close-menu {
+					background: url('../../assets/images/global/mobile-menu-close.png');
+				}
+
+			}
+			#menu {
+				display: none;
+				width: 300px;
+				height: 100%;
+				position: fixed;
+				top: 0;
+				left: 0;
+				z-index: 9999;
+				&.menu-openned {
+					display: block;
+				}
+			}
+			ul.menu-wrapper {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+				width: 300px;
+				height: 100%;
+				position: relative;
+				text-align: right;
+				display: block;
+				background: rgba(233, 233, 233, 0.95);
+				li.main-link-item {
+					margin-right: 2px;
+					display: block;
+					font-size: 14px;
+					font-weight: normal;
+					text-transform: uppercase;
+					cursor: pointer;
+					line-height: 20px;
+					padding: 10px;
+					border-bottom: 1px solid #d9d9d9;
+					&:hover {
+						text-decoration: none;
+
+					}
+					a {
+						text-decoration: none;
+					}
+					.icon {
+						display: inline-block;
+						font-size: 18px;
+						padding: 10px;
+					}
+					.text {
+						display: inline-block;
+					}
+					&.current-menu-item {
+						a {
+							text-decoration: none;
+							height: 48px;
+						}
+					}
+
+					.menu-learning-sub-menu-container, .menu-general-information-sub-menu-container, .menu-exhibitor-resources-sub-menu-container {
+						ul {
+							
+							margin: 0;
+							padding: 0;
+							list-style: none;
+							text-align: left;
+							background: none;
+							border-top: 0px !important;
+							padding: 10px;
+							&.closed {
+								display: none;
+							}
+							&.openned {
+								display: block;
+							}
+							li {
+								display: block;
+								padding: 5px 0;
+								margin: 0;
+								text-align: right;
+								a {
+									font-size: 12px;
+									line-height: 12px;
+									background: none;
+									margin: 0;
+								}
+							}
+
+						}
+					}
+				}
+			}
+	  }
+	}
+}
+
+
+body {
+	&.menu-openned {
+		left: 300px;
+		position: relative;
+	}
+}

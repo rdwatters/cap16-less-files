@@ -1,0 +1,65 @@
+/*!
+ * CAP Meeting less v1.911s
+ */
+/* mixin colors */
+// Globals
+@import "global/mixins.less";
+@import "global/transitions.less";
+@import "global/fonts.less";
+@import "global/colors.less";
+@import "global/header.less";
+@import "global/footer.less";
+// Templates
+@import "templates/homepage.less";
+@import "templates/general.less";
+
+/* col-lg */
+@media (min-width: 1200px) {
+
+}
+
+/* col-md */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* col-sm */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* col-xs */
+@media (max-width: 767px) {
+
+}
+
+
+/* sidebar themes */
+.sidebar-wrapper {
+	padding: 20px;
+	width: 100%;
+	position: relative;
+	img, iframe {
+		position: relative;
+		width: 100%;
+		height: auto;
+	}
+}
+
+.gray_background {
+		background-color: rgba(97, 97, 97, 0.1);
+}
+.breadcrumbs {
+	font-size: 12px;
+	margin: 0 0 10px 0;
+}
+
+.registration-table {
+	.row-1 td {
+		border-bottom: 0px;
+	}
+	.row-2 td {
+		background-color: #f9f9f9 !important;
+		border-top: 0px;
+	}
+}

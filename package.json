@@ -1,0 +1,16 @@
+{
+  "name": "cap16-less",
+  "version": "0.0.1",
+  "description": "Super basic gulp build to output less files currently being preprocess on the client for thepathologistsmeeting.org",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rdwatters",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp-clean-css": "^2.0.7",
+    "gulp-less": "^3.1.0",
+    "gulp-rename": "^1.2.2"
+  }
+}

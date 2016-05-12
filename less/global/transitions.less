@@ -1,0 +1,27 @@
+/* css3 transition mixins*/
+.transition-animation (@element, @duration, @animation, @delay) {
+	-webkit-transition:	@element @duration @animation @delay;
+	-moz-transition:	@element @duration @animation @delay;
+	-o-transition:		@element @duration @animation @delay;
+	transition:			@element @duration @animation @delay;	
+}
+.rounded-corners (@roundness) {
+	-moz-border-radius: @roundness;
+	-webkit-border-radius: @roundness;
+	border-radius: @roundness;
+	-khtml-border-radius: @roundness;
+}
+.animationAll {
+	-webkit-transition: all 250ms ease-in-out 0;
+    -moz-transition: all 250ms ease-in-out 0;
+    -o-transition: all 250ms ease-in-out 0;
+    transition: all 250ms ease-in-out 0;
+}
+
+.transparent (@ie, @modern) { // @ie = 50, @modern = 0.5
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=@ie)";
+	filter: alpha(opacity=@ie);
+	-moz-opacity:@modern;
+	-khtml-opacity: @modern;
+	opacity: @modern;
+}
